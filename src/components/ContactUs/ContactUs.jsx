@@ -15,7 +15,6 @@ const ContactUs = () => {
         email: '',
         message: ''
     });
-
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -31,6 +30,7 @@ const ContactUs = () => {
             message: formData.message
         }
         axiosPublic.post('/contactus', ContactUsMsg)
+        
         if (formData.name && formData.email && formData.message) {
             toast("Message sent successfully!", {
                 type: "success",
