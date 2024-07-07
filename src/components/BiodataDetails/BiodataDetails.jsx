@@ -35,7 +35,8 @@ const BiodataDetails = () => {
         }
     })
 
-    // fetchFavorites with tanstack
+
+      // fetchFavorites with tanstack
     const { refetch, data: favorites = [], isPending: loadingFavorites, } = useQuery({
         queryKey: ['favorites', user?.email],
         queryFn: async () => {
