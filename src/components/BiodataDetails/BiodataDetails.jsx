@@ -28,7 +28,7 @@ const BiodataDetails = () => {
         queryFn: async () => {
             const res = await axiosSecure.get(`/users/email/${user.email}`);
             if (res.data) {
-                // check users if their isPremium available
+                     // check users if their isPremium available
                 setIsPremium(res.data?.isPremium);
             }
             return [users, refetch1, loading];
