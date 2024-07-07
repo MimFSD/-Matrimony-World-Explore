@@ -51,7 +51,7 @@ const BiodataDetails = () => {
     })
 
     // fetchSimilarBiodatas with tanstack
-    
+
     const { refetch: refetchSimilar, data: similarBiodatasData = [], isPending: loadingSimilarBiodatas, } = useQuery({
         queryKey: ['similarBiodatas', biodata.biodataType, biodataIds],
         queryFn: async () => {
@@ -59,6 +59,7 @@ const BiodataDetails = () => {
             const fetchedSimilarBiodatas = res.data.filter(
                 (b) => b.biodataType === biodata.biodataType && b._id !== biodataIds
             ).slice(0, 3);
+            
             setSimilarBiodatas(fetchedSimilarBiodatas);
             return [similarBiodatasData, refetchSimilar, loadingSimilarBiodatas];
         }
