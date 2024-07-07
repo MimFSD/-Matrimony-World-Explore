@@ -19,14 +19,14 @@ const Biodatas = () => {
     const [ageRange, setAgeRange] = useState([18, 99]);
     const [ageRange1, setAgeRange1] = useState([18, 99]);
     const [selectedType, setSelectedType] = useState('');
+
     const [selectedDivision, setSelectedDivision] = useState('');
     const [filteredBiodatas, setFilteredBiodatas] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
 
     const resultsPerPage = 9;
 
-
-    useEffect(() => {
+ useEffect(() => {
         // Filtering biodatas based on criteria
         const filterBiodatas = biodatas.filter(biodata => {
             return (
