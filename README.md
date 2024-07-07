@@ -42,8 +42,7 @@ This is the client-side code for the BB Matrimony platform, an online matrimonia
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/SadatRiyad/PH-Assignment12-Client
-   ```
+   git clone -- current url
 
 2. Navigate to the client directory:
 
@@ -78,6 +77,4 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 This project is licensed under the ISC License.
 
-## Contact
 
-If you have any questions or feedback, please feel free to reach out at admin@bb-matrimony.com.
