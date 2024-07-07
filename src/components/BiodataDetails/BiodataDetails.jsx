@@ -34,8 +34,6 @@ const BiodataDetails = () => {
             return [users, refetch1, loading];
         }
     })
-
-
       // fetchFavorites with tanstack
     const { refetch, data: favorites = [], isPending: loadingFavorites, } = useQuery({
         queryKey: ['favorites', user?.email],
@@ -53,6 +51,7 @@ const BiodataDetails = () => {
     })
 
     // fetchSimilarBiodatas with tanstack
+    
     const { refetch: refetchSimilar, data: similarBiodatasData = [], isPending: loadingSimilarBiodatas, } = useQuery({
         queryKey: ['similarBiodatas', biodata.biodataType, biodataIds],
         queryFn: async () => {
