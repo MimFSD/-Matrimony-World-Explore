@@ -48,6 +48,7 @@ const AboutUs = () => {
                             Q: Can I trust BB-Matrimony to find the perfect partner for me?
                         </AccordionTrigger>
                         <AccordionContent>
+                        
                             <p>Ans: Absolutely! We understand that finding a life partner is a significant decision, and we take our responsibility to our clients very seriously. With our extensive network, matchmaking algorithms, and dedication to customer satisfaction, you can trust us to help you find your perfect match.</p>
                         </AccordionContent>
                     </AccordionItem>
