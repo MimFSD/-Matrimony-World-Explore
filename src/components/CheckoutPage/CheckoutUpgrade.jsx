@@ -19,7 +19,7 @@ const CheckoutUpgrade = () => {
     const elements = useElements();
     const navigate = useNavigate();
     const axiosSecure = useAxiosSecure();
-    // get biodataID from the url
+      // get biodataID from the url
     const biodataID = window.location.pathname.split("/").pop();
     const { user } = useAuth();
     // eslint-disable-next-line no-unused-vars
