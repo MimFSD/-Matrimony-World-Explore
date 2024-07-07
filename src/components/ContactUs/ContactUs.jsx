@@ -30,7 +30,7 @@ const ContactUs = () => {
             message: formData.message
         }
         axiosPublic.post('/contactus', ContactUsMsg)
-        
+
         if (formData.name && formData.email && formData.message) {
             toast("Message sent successfully!", {
                 type: "success",
@@ -76,7 +76,7 @@ const ContactUs = () => {
                     <p className="text-base px-2 mb-0 font-medium">
                         Got any questions, suggestions, or feedback? <br />
                         <span style={{ fontWeight: 'medium' }}>
-                            {/* Style will be inherited from the parent element */}
+                      {/* Style will be inherited from the parent element */}
                             <Typewriter
                                 words={['Feel free to reach out to us using the contact information below: ']}
                                 cursor
