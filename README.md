@@ -47,7 +47,8 @@ This is the client-side code for the BB Matrimony platform, an online matrimonia
 2. Navigate to the client directory:
 
    ```bash
-   cd PH-Assignment12-Client
+   cd Matrimony-World-Explore
+
    ```
 
 3. Install dependencies:
