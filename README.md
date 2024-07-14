@@ -1,4 +1,4 @@
-# BB Matrimony Client
+#  Matrimony Platfrom
 
 This is the client-side code for the BB Matrimony platform, an online matrimonial platform designed to connect people with their potential life partners.
 
